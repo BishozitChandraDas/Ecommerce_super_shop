@@ -3,4 +3,7 @@
 * Complete sorting functionality
 * Navigate to cart page and show all cart items
 * Get products from an API
+
+
+
   
