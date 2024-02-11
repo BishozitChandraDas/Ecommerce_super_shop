@@ -18,9 +18,9 @@ class CategoryView extends GetView<CategoryController> {
   Widget build(BuildContext context) {
     final CategoryController controller = Get.put(CategoryController());
     return Scaffold(
-      backgroundColor: AppColors.bgColor,
+      backgroundColor: AppColors.whiteBackground,
       appBar: AppBar(
-        backgroundColor: AppColors.bgColor,
+        backgroundColor: AppColors.whiteBackground,
         title: Text(
           "Fruits & Vegetables",
           style: TextStyle(

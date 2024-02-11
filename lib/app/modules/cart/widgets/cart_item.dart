@@ -40,25 +40,28 @@ Widget cartItem({
             SizedBox(height: 5.w),
             Container(
               width: 150.w,
-              height: 30.h,
-              padding: EdgeInsets.symmetric(horizontal: 5.w),
+              height: 40.h,
+              padding: EdgeInsets.symmetric(horizontal: 10.w),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12.r),
+                borderRadius: BorderRadius.circular(20.r),
                 border: Border.all(
-                  color: AppColors.redAccentColor,
+                  color: AppColors.black,
+                  width: 3
                 ),
+                color: AppColors.white
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   InkWell(
                     onTap: decrementTap,
-                    child: const Icon(CupertinoIcons.minus),
+                    child: const Icon(CupertinoIcons.minus, size: 40,),
                   ),
-                  Text(cartItemCount.toString()),
+                  Text(cartItemCount.toString(),
+                  style: const TextStyle(fontSize: 30)),
                   InkWell(
                     onTap: incrementTap,
-                    child: const Icon(Icons.add),
+                    child: const Icon(Icons.add, size:40),
                   ),
                 ],
               ),
@@ -81,7 +84,8 @@ Widget cartItem({
             onPressed: deleteTap,
             icon: Icon(
               Icons.delete,
-              color: AppColors.redAccentColor,
+              color: AppColors.red,
+              size: 40,
             ),
           ),
         ],

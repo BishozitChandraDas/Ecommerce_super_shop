@@ -6,7 +6,7 @@ Container actionIconWidget({required IconData icon}) {
   return Container(
     padding: EdgeInsets.all(5.w),
     decoration: BoxDecoration(
-      color: AppColors.whiteColor,
+      color: AppColors.white,
       shape: BoxShape.circle,
     ),
     child: Icon(icon),

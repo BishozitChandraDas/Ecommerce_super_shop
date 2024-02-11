@@ -48,7 +48,7 @@ Widget discountIndicator({
         lineHeight: 8.h,
         percent: percentage,
         barRadius: Radius.circular(5.r),
-        backgroundColor: AppColors.greyColor,
+        backgroundColor: AppColors.grey,
         progressColor: AppColors.green,
       ),
     ],

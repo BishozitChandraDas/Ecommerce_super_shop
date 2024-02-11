@@ -8,7 +8,7 @@ Widget checkoutContainer({
   }) {
     return Container(
       height: 90.h,
-      color: AppColors.tealColor,
+      color: AppColors.white,
       padding: EdgeInsets.all(10.w),
       child: Column(
         children: [
@@ -35,18 +35,18 @@ Widget checkoutContainer({
           InkWell(
             onTap: onTap,
             child: Container(
-              height: 40.h,
+              height: 35.h,
               alignment: Alignment.center,
               decoration: BoxDecoration(
                 color: AppColors.green,
-                borderRadius: BorderRadius.circular(15.r),
+                borderRadius: BorderRadius.circular(20.r),
               ),
               child: Text(
                 "Checkout",
                 style: TextStyle(
                   fontSize: 15.sp,
                   fontWeight: FontWeight.w700,
-                  color: AppColors.whiteColor,
+                  color: AppColors.white,
                 ),
               ),
             ),

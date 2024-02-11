@@ -16,26 +16,26 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.BOTTOM_NAV_BAR;
+  static const INITIAL = Routes.bottomNavBar;
 
   static final routes = [
     GetPage(
-      name: _Paths.HOME,
+      name: _Paths.home,
       page: () => const HomeView(),
       binding: HomeBinding(),
     ),
     GetPage(
-      name: _Paths.BOTTOM_NAV_BAR,
+      name: _Paths.bottomNavBar,
       page: () =>  BottomNavBarView(),
       binding: BottomNavBarBinding(),
     ),
     GetPage(
-      name: _Paths.CATEGORY,
+      name: _Paths.category,
       page: () =>  CategoryView(),
       binding: CategoryBinding(),
     ),
     GetPage(
-      name: _Paths.CART,
+      name: _Paths.cart,
       page: () => const CartView(),
       binding: CartBinding(),
     ),

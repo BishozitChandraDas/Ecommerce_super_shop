@@ -17,7 +17,7 @@ class BottomNavBarView extends GetView<BottomNavBarController> {
    BottomNavBarView({Key? key}) : super(key: key);
 
   final pageList =  [
-    const HomeView(),
+    HomeView(),
     CategoryView(),
     const Center(
       child: Text("Search"),
@@ -61,18 +61,18 @@ class BottomNavBarView extends GetView<BottomNavBarController> {
                         ),
                       ),
                       badgeStyle: badges.BadgeStyle(
-                        badgeColor: AppColors.whiteColor,
+                        badgeColor: AppColors.white,
                       ),
                       child: Icon(
                         Icons.shopping_cart_outlined,
-                        color: AppColors.whiteColor,
+                        color: AppColors.white,
                         size: 25.h,
                       ),
                     ),
                     Text(
                       '৳ ${cartController.calculateSubtotal()}',
                       style: TextStyle(
-                        color: AppColors.whiteColor,
+                        color: AppColors.white,
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w600,
                       ),
@@ -100,7 +100,7 @@ class BottomNavBarView extends GetView<BottomNavBarController> {
                   label: home,
                   color: controller.currentIndex == 0
                       ? AppColors.green
-                      : AppColors.greyColor,
+                      : AppColors.grey,
                 ),
               ),
               //category
@@ -114,7 +114,7 @@ class BottomNavBarView extends GetView<BottomNavBarController> {
                   label: category,
                   color: controller.currentIndex == 1
                       ? AppColors.green
-                      : AppColors.greyColor,
+                      : AppColors.grey,
                 ),
               ),
               Expanded(flex: 1, child: Container()),
@@ -129,7 +129,7 @@ class BottomNavBarView extends GetView<BottomNavBarController> {
                   label: search,
                   color: controller.currentIndex == 2
                       ? AppColors.green
-                      : AppColors.greyColor,
+                      : AppColors.grey,
                 ),
               ),
               //menu
@@ -143,7 +143,7 @@ class BottomNavBarView extends GetView<BottomNavBarController> {
                   label: menu,
                   color: controller.currentIndex == 3
                       ? AppColors.green
-                      : AppColors.greyColor,
+                      : AppColors.grey,
                 ),
               ),
             ],

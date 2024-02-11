@@ -20,9 +20,9 @@ class CartView extends GetView<CartController> {
       double amount = 1000 - controller.calculateSubtotal();
 
       return Scaffold(
-        backgroundColor: AppColors.bgColor,
+        backgroundColor: AppColors.whiteBackground,
         appBar: AppBar(
-          backgroundColor: AppColors.bgColor,
+          backgroundColor: AppColors.whiteBackground,
           title: Text(
             'Shopping Cart (${controller.box.values.toList().length})',
             style: TextStyle(

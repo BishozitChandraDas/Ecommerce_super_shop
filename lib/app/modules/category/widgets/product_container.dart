@@ -23,7 +23,7 @@ Widget productContainer({
   return Container(
     padding: EdgeInsets.all(5.w),
     decoration: BoxDecoration(
-      color: AppColors.whiteColor,
+      color: AppColors.white,
       borderRadius: BorderRadius.circular(8.r),
     ),
     child: Column(
@@ -34,7 +34,7 @@ Widget productContainer({
           children: [
             ///product image || discount
             Container(
-              height: 140.h,
+              height: 100.h,
               alignment: Alignment.topRight,
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -43,15 +43,16 @@ Widget productContainer({
               ),
               child: proDiscount == null
                   ? const SizedBox()
-                  : Container(
+                  : 
+                  Container(
                       height: 50.h,
                       width: 90.w,
                       alignment: Alignment.center,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         image: DecorationImage(
                           fit: BoxFit.fill,
                           image: AssetImage(
-                            proDiscountImage,
+                            'assets/images/discount.png',
                           ),
                         ),
                       ),
@@ -60,8 +61,8 @@ Widget productContainer({
                         child: Text(
                           proDiscount,
                           style: TextStyle(
-                            color: AppColors.redAccentColor,
-                            fontSize: 12.sp,
+                            color: AppColors.red,
+                            fontSize: 10.sp,
                             fontWeight: FontWeight.w700,
                           ),
                         ),
@@ -81,7 +82,7 @@ Widget productContainer({
                         color: AppColors.green,
                         borderRadius: BorderRadius.circular(12.r),
                         border: Border.all(
-                          color: AppColors.redAccentColor,
+                          color: AppColors.red,
                         ),
                       ),
                       child: Row(
@@ -91,18 +92,18 @@ Widget productContainer({
                             onTap: decrementTap,
                             child: Icon(
                               CupertinoIcons.minus,
-                              color: AppColors.whiteColor,
+                              color: AppColors.white,
                             ),
                           ),
                           Text(
                             "$cartItem",
-                            style: TextStyle(color: AppColors.whiteColor),
+                            style: TextStyle(color: AppColors.white),
                           ),
                           InkWell(
                             onTap: incrementTap,
                             child: Icon(
                               Icons.add,
-                              color: AppColors.whiteColor,
+                              color: AppColors.white,
                             ),
                           ),
                         ],
@@ -121,7 +122,7 @@ Widget productContainer({
                         child: cartItem == 0
                             ? Icon(
                                 Icons.add,
-                                color: AppColors.whiteColor,
+                                color: AppColors.white,
                                 size: 30.h,
                               )
                             : Text(
@@ -129,7 +130,7 @@ Widget productContainer({
                                 style: TextStyle(
                                   fontSize: 18.sp,
                                   fontWeight: FontWeight.w700,
-                                  color: AppColors.whiteColor,
+                                  color: AppColors.white,
                                 ),
                               ),
                       ),
@@ -144,7 +145,7 @@ Widget productContainer({
           child: Container(
             padding: EdgeInsets.all(2.w),
             decoration: BoxDecoration(
-              color: AppColors.tealColor,
+              color: AppColors.teal,
               borderRadius: BorderRadius.circular(4.r),
             ),
             child: Text(
@@ -181,7 +182,7 @@ Widget productContainer({
           style: TextStyle(
             fontWeight: FontWeight.w700,
             fontSize: 12.sp,
-            color: AppColors.greyColor,
+            color: AppColors.grey,
           ),
         ),
 
@@ -201,7 +202,7 @@ Widget productContainer({
               style: TextStyle(
                 fontWeight: FontWeight.w700,
                 fontSize: 16.sp,
-                color: AppColors.greyColor,
+                color: AppColors.grey,
                 decoration: TextDecoration.lineThrough,
               ),
             ),
